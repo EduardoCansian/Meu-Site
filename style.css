@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to bottom, rgb(16, 8, 120), rgb(30, 20, 159));
+    /* background: linear-gradient(to bottom, rgb(16, 8, 120), rgb(30, 20, 159)); */
+    background-image: url("/Picture/bg.jpg");
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 10vh;
@@ -10,15 +11,20 @@ body {
 main {
     display: flex;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: transparent;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+h2 {
+   border-bottom: 1px solid gray;
+   border-radius: 5px;
+}
+
 p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 a {
@@ -28,7 +34,7 @@ a {
 }
 
 a:hover {
-    color: rgb(209, 204, 251)
+    color: rgb(221, 218, 249)
 }
 
 i {
@@ -37,31 +43,30 @@ i {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 10px;
     border-radius: 10px;
     margin: 5px;
-}
-
-.photo img{
-    align-self: flex-start;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
-.photo {
-    display: flex;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 #main-info {
     width: 100%;
     max-width: 750px;
+    flex: 3;
 }
 
-.text {
-    margin-left: 10px;
+#skills, #main-info {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    margin: 5px;
 }
 
 .info {
@@ -71,23 +76,107 @@ i {
     align-self: flex-end;
     width: 100%;
     max-width: 900px;
+    flex: 1;
 }
 
-.social-links, .certificates {
+ img{
+    align-self: flex-start;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.header-info {
+    display: flex;
+}
+
+.about-me {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
-.social-links div, .certificates div, #resume div {
+.about-me header {
+    padding: 10px;
+}
+
+.my-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.certificates {
+    display: flex;
+    gap: 12px;
+    margin: 5px;
+}
+
+.left-certificate, .right-certificate {
+    border-left: 1px solid gray;
+    border-radius: 10px;
+}
+
+.left-certificate div, .right-certificate div, .social-links div, .resume div {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin: 6px;
 }
 
-.social_resume {
+#social_resume {
     display: flex;
+    justify-content: space-around;
+    align-content: center;   
+}
+
+.download-resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects p {
+    margin-top: 0;
+}
+
+.projects div {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: 220px;
+}
 
+.projects button {
+    background: transparent;
+    border: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.projects button:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
