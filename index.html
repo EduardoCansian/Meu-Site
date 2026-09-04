@@ -4,61 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <title>Meu Perfil Pessoal</title>
 </head>
 <body>
     <main>
-        <div class="container" id="main-info">
-            <header>
-                <h1>Meu Perfil</h1>
+        <section class="container" id="main-info">
+            <header class="about-me">
+                <h1>Sobre mim</h1>
             </header>
             <div class="photo">
-                <img src="/Picture/IMG_11442.jpg" height="200" alt="minha foto">
+                <div>
+                    <img src="/Picture/IMG_11442.jpg" height="200" alt="minha foto">
+                </div>
+                <div class="text">
+                    <p>Meu nome é <strong>Eduardo Cansian Rodrigues</strong>, tenho 22 anos e nasci em Cachoeiro de Itapemirim - Espírito Santo e
+                atualmente sou desenvolvedor front-end. Concluí a minha graduação do curso de Sistemas de Informação na faculdade Multivix de Cachoeiro de Itapemirim no período de 4 anos.</p>
+                <p>Tenho experiência prévia com desenvolvimento de software e regras de negócio, mas hoje minha paixão está no ecossistema web. Tenho domínio em HTML, CSS e JavaScript, 
+                    e meu objetivo a curto prazo é dominar o React, evoluindo futuramente para o Back-end com Node.js para atuar como desenvolvedor Full-Stack.</p>
+                </div>
+                
             </div>
-            <p>Meu nome é Eduardo Cansian Rodrigues, tenho 22 anos e nasci em Cachoeiro de Itapemirim - Espírito Santo e <br>
-                atualmente sou desenvolvedor front-end. Concluí a minha graduação do curso de Sistemas de Informação na faculdade Multivix de Cachoeiro de Itapemirim no período de 4 anos. <br>
-                Sou uma pessoa um pouco introvertida porém bem observadora, atenciosa aos detalhes, proativa e dedicada <br>
-                o que me ajuda a aprender coisas novas a todo momento e também a fazer novas amizades. <br> 
-                Estou sempre desenvolvendo algum projeto ou estudando algo novo buscando aprimorar meus conhecimentos e também conseguir crescimento profissional.
-            </p>
-        </div>
+            
+        </section>
 
         <div class="info">
-
-            <div class="container" id="skills">
+            <section class="container" id="skills">
                 <header>
                     <h2>Habilidades</h2>
                 </header>
-                <p>Minhas habilidades incluem o conhecimento das seguintes tecnologias:</p>
+                <p>Minhas habilidades atuais e foco de desenvolvimento:</p>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>C#</li>
-                    <li>Delphi</li>
-                    <li>PostgreSQL</li>
+                    <li><strong>Front-end:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Versionamento:</strong> Git e GitHub</li>
+                </ul>
+                <p>Tecnologias no meu radar de estudos:</p>
+                <ul>
+                    <li>React.js</li>
+                    <li>Node.js</li>
                 </ul>
                 <p>Além disso, participei de muitos cursos sobre a área de TI. Confira alguns:</p>
-                <a href="/arquivos/Coursera IA_Fundametals.pdf" target="_blank">Fundamentos de IA</a>
-                <a href="/arquivos/Coursera Programming with JavaScript.pdf" target="_blank">Programando com JavaScript</a>
-                <a href="/arquivos/NLW - Agents.pdf" target="_blank">NLW Agents</a>
+                <div class="certificates">
+                    <div><span class="material-symbols-outlined">fact_check</span><a href="/arquivos/Coursera IA_Fundametals.pdf" target="_blank">Fundamentos de IA</a></div>
+                    <div><span class="material-symbols-outlined">fact_check</span><a href="/arquivos/Coursera Programming with JavaScript.pdf" target="_blank">Programando com JavaScript</a></div>
+                    <div><span class="material-symbols-outlined">fact_check</span><a href="/arquivos/NLW - Agents.pdf" target="_blank">NLW Agents</a></div>
+                
+                    <div><span class="material-symbols-outlined">fact_check</span><a href="/arquivos/Certificado segurança da informação.pdf" target="_blank">Segurança da Informação</a></div>
+                </div>      
+            </section>
+            
+            <div class="social_resume">
+                <section class="container" id="social-midia">
+                    <header>
+                        <h2>Redes sociais</h2>
+                    </header>
+                    <div class="social-links">
+                        <div><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/eduardocansianrodrigues/" target="_blank">Linkedin</a></div>
+                        <div><i class="bi bi-github"></i><a href="https://github.com/EduardoCansian" target="_blank">GitHub</a></div>       
+                        <div><i class="bi bi-instagram"></i><a href="https://www.instagram.com/dudu_cansian/" target="_blank">Instagram</a></div>         
+                    </div>          
+                    </section>
+                
+                <section class="container" id="resume">
+                    <header>
+                        <h2>Baixe meu currículo</h2>
+                    </header>
+                    <div class="download-resume">
+                        <i class="bi bi-download"></i><a href="/arquivos/ Eduardo TI.pdf" download="Curriculo Eduardo TI.pdf">Currículo Eduardo TI</a>
+                    </div>
+                    
+                </section>
             </div>
             
-            <div class="container" id="social-midia">
-                <header>
-                    <h2>Redes sociais</h2>
-                </header>
-                <a href="https://www.linkedin.com/in/eduardocansianrodrigues/" target="_blank">Linkedin</a>
-                <a href="https://www.instagram.com/dudu_cansian/" target="_blank">Instagram</a>
-                <a href="https://github.com/EduardoCansian" target="_blank">GitHub</a>
-            </div>
-            
-            <div class="container" id="resume">
-                <header>
-                    <h2>Baixe meu currículo</h2>
-                </header>
-                <a href="/arquivos/ Eduardo TI.pdf" download="Curriculo Eduardo TI.pdf">Currículo Eduardo TI</a>
-            </div>
         </div>
 
     </main>
