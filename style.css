@@ -1,6 +1,5 @@
 body {
-    /* background: linear-gradient(to bottom, rgb(16, 8, 120), rgb(30, 20, 159)); */
-    background-image: url("bg.jpg");
+    background-image: url("/img/bg.jpg");
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 10vh;
@@ -13,7 +12,6 @@ main {
     border-radius: 10px;
     background: transparent;
     backdrop-filter: blur(10px);
-    /* border: 1px solid rgba(255, 255, 255, 0.3); */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
