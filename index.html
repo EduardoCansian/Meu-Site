@@ -40,13 +40,13 @@
                 </header>
                 <div class="projects">
                     <div>
-                        <img src="./img/Assistente-virtual.png" alt="imagem projeto" width="218px">
+                        <img src="./img/Assistente-virtual.png" class="image-expansivel" alt="imagem projeto" width="218px">
                         <h3>Assistente de Meta</h3>
                         <p>Um asistente virtual desenvolvido usando API de Gemini para te auxiliar nos jogos fornecendo as melhores dicas e estratégias.</p>
                         <button><a href="https://github.com/EduardoCansian/Assistente-de-Meta" target="_blank">Ver Projeto</a></button>
                     </div>
                     <div>
-                        <img src="./img/Playnium.png" alt="imagem projeto" width="218px">
+                        <img src="./img/Playnium.png" class="image-expansivel" alt="imagem projeto" width="218px">
                         <h3>Playnium</h3>
                         <p>Uma plataforma que, por meio de uma API externa, busca jogos e traz informações como plataformas disponíveis, nota, gênero, descrição etc.</p>
                         <button><a href="https://github.com/EduardoCansian/Playnium" target="_blank">Ver Projeto</a></button>
@@ -126,5 +126,13 @@
         </div>
 
     </main>
+    <div id="imageModal" class="modal">
+        <div class="close-box">
+            <span class="close">&times;</span>
+        </div>
+
+        <img class="modal-content" id="imgExpanded">
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
