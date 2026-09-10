@@ -156,7 +156,7 @@ li {
     margin-top: 0;
 }
 
-.projects div {
+.project-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,17 +170,23 @@ li {
     max-width: 220px;
 }
 
-.projects button {
+.project-button button {
     background: transparent;
     border: 0;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     color: white;
     cursor: pointer;
-    margin-top: 10px;
+    padding: 5px;
 }
 
-.projects button:hover {
+.project-button {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.project-button button:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
 }
